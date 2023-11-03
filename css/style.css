@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+body {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  background: #0a0c1c;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1093px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  border-radius: 8px;
+  background: #1b1937;
+  box-shadow: 0px 20px 20px -10px rgba(23, 25, 41, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding-left: 74px;
+}
+.hero .hero-left {
+  width: 41%;
+}
+.hero .hero-left h1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+  margin-bottom: 25px;
+}
+.hero .hero-left h1 span {
+  color: #ab5cdb;
+}
+.hero .hero-left p {
+  max-width: 384px;
+  opacity: 0.75;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  margin-bottom: 72px;
+}
+.hero .hero-left .hero-left-data {
+  max-width: 334px;
+  display: flex;
+  justify-content: space-between;
+}
+.hero .hero-left .hero-left-data h2 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.hero .hero-left .hero-left-data p {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 25px; /* 208.333% */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 0.6;
+  margin-bottom: 0;
+}
+.hero .hero-right {
+  width: 55.5%;
+}
+.hero .hero-right img {
+  width: 100%;
+  height: 446px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    height: auto;
+    margin-top: 88px;
+    margin-bottom: 88px;
+  }
+  .hero {
+    flex-direction: column-reverse;
+    padding-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+  .hero .hero-right {
+    width: 100%;
+  }
+  .hero .hero-left {
+    width: 90%;
+  }
+  .hero .hero-left p {
+    max-width: 100%;
+  }
+  .hero .hero-left .hero-left-data {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .hero-left-data {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .hero-right img {
+    height: 240px !important;
+  }
+  .hero-left h1 {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .container {
+    padding: 0 10px !important;
+  }
+  .hero {
+    padding-bottom: 32px;
+  }
+  .hero-left {
+    width: 100%;
+  }
+}
